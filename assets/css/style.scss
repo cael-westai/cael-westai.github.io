@@ -159,11 +159,27 @@ pre {
 // Header
 .site-header {
   border-bottom: 1px solid $color-border;
-  padding: 1.25rem 0;
+  padding: 0;
   background: rgba(255,255,255,0.95);
-  position: sticky;
-  top: 0;
   z-index: 100;
+}
+
+.site-banner {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: $color-bg-light;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.site-header .header-bar {
+  padding: 1.25rem 0;
   backdrop-filter: blur(8px);
 }
 
